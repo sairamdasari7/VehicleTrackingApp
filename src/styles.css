@@ -1,0 +1,59 @@
+/* Basic reset and full-height map container */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  #root {
+    height: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Style the map container */
+  #map {
+    height: 80vh; /* Make the map take up most of the viewport height */
+    width: 100%;
+    border: 2px solid #ddd; /* Light border around the map */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin: 0 auto; /* Center the map */
+  }
+  
+  /* Style the Leaflet markers */
+  .leaflet-marker-icon {
+    border-radius: 50%; /* Rounded marker icons */
+    border: 2px solid #007bff; /* Blue border for visibility */
+  }
+  
+  .leaflet-popup-content {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .leaflet-fontawesome-icon span {
+    font-size: 24px;
+    color: #000; /* Adjust color as needed */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    #map {
+      height: 70vh; /* Reduce height on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #map {
+      height: 60vh; /* Further reduce height on extra-small screens */
+    }
+  }
+  
